@@ -7,5 +7,5 @@ RUN apk add --update git && \
 
 FROM scratch
 USER 1000
-COPY --from=builder /build/runnable_app .
+COPY --from=builder /build/runnable_app ./app
 CMD ["./app"]
